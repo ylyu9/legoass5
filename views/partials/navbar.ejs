@@ -1,0 +1,14 @@
+<div class="navbar bg-base-100">
+    <div class="flex-1">
+      <a href="/" class="btn btn-ghost text-xl">Lego Collection</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1 object-bottom">
+        <!-- The 'page' variable is used to dynamically add the 'active' class to the current page link -->
+        <li><a class="<%= (page == '/lego/sets') ? 'active navLink lg:text-2xl md:text-xl font-bold dark:text-neutral-100 logo' : 'navLink lg:text-2xl md:text-xl font-bold dark:text-neutral-100 logo' %>" href="/lego/sets">View Collection</a></li>
+        <li><a href="/about" class="<%= (page == '/about') ? 'active' : '' %> lg:text-2xl md:text-xl font-bold dark:text-neutral-100 g:text-2xl md:text-xl font-bold dark:text-neutral-100 ">About</a></li>
+        <li><a class="<%= (page == "/lego/addSet") ? 'active navLink lg:text-2xl md:text-xl font-bold dark:text-neutral-100 logo' : 'navLink lg:text-2xl md:text-xl font-bold dark:text-neutral-100 logo' %>" href="/lego/addSet">Add to Collection</a></li>
+      </ul>
+    </div>
+  </div>
+  
